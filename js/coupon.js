@@ -22,10 +22,10 @@ window.onload=function(){
                 for (var  i = 0; i <data.result.length ; i++) {
                     console.log(data.result[i]);
                     html+=`<li>
-                                <div>
+                                <a href="couponproduct.html?couponid=${data.result[i].couponId}">
                                     <img src=${data.result[i].couponImg} alt="">
                                     <span>${data.result[i].couponTitle}</span>
-                                </div>
+                                </a>
                             </li>`
                 }
                 $('.swyh_main_li').html(html);
