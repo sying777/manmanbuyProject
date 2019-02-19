@@ -20,6 +20,9 @@ body {
   overflow: hidden;
   z-index: 999;
 }
+#header a {
+  color: white;
+}
 #header .zjc-left {
   width: .4rem;
   font-size: .3rem;
@@ -37,9 +40,12 @@ body {
   width: .4rem;
 }
 #main {
-  padding-top: .4rem;
   flex: 1;
   overflow: scroll;
+}
+#main #list {
+  margin-top: .4rem;
+  margin-bottom: .8rem;
 }
 #main .nav {
   height: .3rem;

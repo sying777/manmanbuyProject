@@ -16,7 +16,7 @@
 <body>
     <!-- 头部区域 -->
     <header id="header">
-        <div class="zjc-left"><i class="fa fa-angle-left"></i></div>
+        <div class="zjc-left"><a href="javascript:history.back();"><i class="fa fa-angle-left"></i></a></div>
         <div class="zjc-center">
             <h5>白菜价-淘宝内部券</h5>
         </div>
@@ -24,8 +24,10 @@
     </header>
     <!-- 主体区域 -->
     <main id="main">
-        
-        <!-- 导航栏区域 -->
+        <div id="list" class="mui-scroll-wrapper">
+            <div class="mui-scroll">
+                <!--这里放置真实显示的DOM内容-->
+                <!-- 导航栏区域 -->
         <nav class="nav">
             <div class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
                 <div class="mui-scroll">
@@ -54,6 +56,9 @@
                 </div>
             </div>
         </section>
+            </div>
+        </div>
+        
     </main>
     <!-- 尾部区域 -->
     <footer id="footer">
@@ -73,12 +78,12 @@
             <p>
                 m.manmanbuy.com </p>
         </div>
-        <a href='#' id="top" class="fa fa-arrow-circle-o-up"></a>
+        <div href='#' class="fa fa-arrow-circle-o-up top_back"></div>
     </footer>
 </body>
-<script src="../lib/mui/js/mui.min.js"></script>
-<script src="../lib/zepto/zepto.min.js"></script>
 <script src="../lib/jquery/jquery-3.1.1.min.js"></script>
+<script src="../lib/mui/js/mui.js"></script>
+<script src="../lib/zepto/zepto.min.js"></script>
 <script src="../lib/artTemplate/template-web.js"></script>
 <script src="../js/lowPrice.js"></script>
 <!-- 导航栏的渲染 -->

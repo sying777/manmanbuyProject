@@ -5,6 +5,10 @@ $(function () {
         bounce: true, //是否启用回弹
         deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
     });
+    //主体部分区域滚动初始化
+    mui('#main .mui-scroll-wrapper').scroll({
+        deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
+    });
     // 进度条
     mui(".demo1").progressbar({progress:40}).show();
     // 导航栏的渲染
@@ -39,4 +43,11 @@ $(function () {
             }
         })
     }
+    // 返回顶部
+    $('.top_back').on('tap',function (e) {
+        
+        e.preventDefault();
+        mui('#list').scroll().scrollTo(0,0,1000);
+        
+    })
 })
