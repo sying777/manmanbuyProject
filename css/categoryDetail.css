@@ -80,11 +80,14 @@ li {
   overflow: scroll;
   flex: 1;
   margin-top: .1rem;
-  padding-bottom: .3rem;
+  padding-bottom: .1rem;
   display: flex;
 }
 #main .mui-scroll-wrapper {
-  flex: 1;
+  position: relative;
+}
+#main .mui-scroll-wrapper .mui-scroll {
+  position: relative;
 }
 #main .mui-scroll-wrapper .mui-scroll #nav {
   height: .3rem;
