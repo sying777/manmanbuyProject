@@ -39,18 +39,4 @@ $(function () {
             }
         })
     }
-    // 返回顶部的按钮
-    // $(window).scroll(function () {
-    //     if(($window).scrollTop()> 200){
-    //         $('.fa-arrow-circle-o-up').show();
-    //     }else(
-    //         $('.fa-arrow-circle-o-up').hide()
-    //     )
-    // })
-    // $('#top').on('click',function () {
-    //     $('body,html').animate({scrollLeft:0},1000);
-    //     return false;
-
-    // })
-
 })

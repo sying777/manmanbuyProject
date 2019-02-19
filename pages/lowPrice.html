@@ -78,6 +78,7 @@
 </body>
 <script src="../lib/mui/js/mui.min.js"></script>
 <script src="../lib/zepto/zepto.min.js"></script>
+<script src="../lib/jquery/jquery-3.1.1.min.js"></script>
 <script src="../lib/artTemplate/template-web.js"></script>
 <script src="../js/lowPrice.js"></script>
 <!-- 导航栏的渲染 -->
@@ -94,7 +95,7 @@
         <div class="zjc-right">
             <p class="zjc-title">{{@value.productName}}</p>
             <div class="zjc-price">{{@value.productPrice}}</div>
-            <div class="progress">
+            <div class="progress" data-id='{{value.productId}}'>
                 {{@value.productCouponRemain}}
             </div>
             <div class="zjc-receive">

@@ -101,6 +101,7 @@ body {
 }
 #main .shops .zjc-goods .zjc-right .zjc-price i {
   font-size: .14rem;
+  font-style: normal;
 }
 #main .shops .zjc-goods .zjc-right .zjc-price del {
   margin-left: .2rem;
@@ -126,6 +127,7 @@ body {
 }
 #main .shops .zjc-goods .zjc-right .zjc-receive {
   display: flex;
+  margin-top: .08rem;
 }
 #main .shops .zjc-goods .zjc-right .zjc-receive .zjc-coupons {
   font-size: .12rem;
@@ -147,6 +149,32 @@ body {
 }
 #main .shops .zjc-goods .zjc-right .zjc-receive .zjc-buy a {
   color: #fff;
+}
+.bar i {
+  position: relative;
+  float: left;
+  width: 1rem;
+  height: .14rem;
+  border: 1px solid;
+  font-size: .14rem;
+  margin-top: .04rem;
+}
+.bar i em {
+  float: left;
+  width: 0rem;
+  height: .11rem;
+  border: 0px;
+  background: red;
+  font-size: .14rem;
+}
+.bar i span {
+  position: absolute;
+  left: 40%;
+  top: -0.05rem;
+}
+.bar b {
+  color: #f4483e;
+  font-size: .12rem;
 }
 #footer {
   position: relative;
