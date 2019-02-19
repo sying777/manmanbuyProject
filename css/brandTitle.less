@@ -1,0 +1,84 @@
+
+
+
+body{
+    height:100vh;
+    background-color: #fff;
+}
+
+
+img{
+    vertical-align: middle;
+}
+//头部
+#xy-header{
+    width:100%;
+    height:.6rem;
+    background-color: pink;
+    position: fixed;
+    z-index:999;
+}
+
+//主体
+#xy-main{
+    .xy-title{
+        color:#5a5a5a;
+        height:.35rem;
+        font-size: .14rem;
+        line-height: .35rem;
+        border-top:1px solid #ccc;
+        border-bottom:1px solid #ccc;
+        padding-left:.1rem;
+        background:linear-gradient(#fff,#eeeeee);
+        a{
+            color:#5a5a5a;
+        }
+    }
+
+    .xy-content{
+        background-color: #f2f2f2;
+        padding:.1rem .05rem;
+        padding-bottom:0px;
+        .xy-con-title{
+            background-color: #eee;
+            border:1px solid #ccc;
+            padding-left:.1rem;
+            font-size:.15rem;
+            line-height: .4rem;
+            color:#874604;
+        }
+        .xy-con-list{
+            padding-top:.1rem;
+            ul{
+                padding:.05rem;
+                padding-bottom:0px;
+                li{
+                    font-weight: 600;
+                    font-family: "宋体";
+                    line-height:.45rem;
+                    border-bottom:1px solid #ccc; 
+                    display: flex;
+                    justify-content: space-between;
+                    i{
+                        line-height:.45rem;
+                        font-size: .28rem;
+                        color:#666;
+                    }
+                    &:last-child{
+                        border-bottom:none; 
+                    }
+                }
+            }
+        }
+    }
+}
+
+//底部
+#xy-footer{
+    height:.6rem;
+    background-color: yellow;
+}
+
+.mui-scroll-wrapper{
+    margin-top:.6rem;
+}
