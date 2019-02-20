@@ -2,41 +2,8 @@ $(function () {
     //打开页面时马上以默认的商店和地区id渲染页面
     queryGoods();
 
-    $('.shop').on('tap', function () {
-        // if ($(this).find('i').hasClass('fa-caret-down')){
-        //     var id = $(this).data('id');
-        //     //修改箭头指向，展开下拉选择框
-        //     $(this).find('i').removeClass('fa-caret-down').addClass('fa-caret-up');
-        //     $.ajax({
-        //         url: 'http://localhost:9090/api/getgsshop',
-        //         dataType: 'json',
-        //         success: function (data) {
-        //             for (var i=0; i<data.result.length; i++){
-        //                 data.result[i].id = id;
-        //             }
-        //             console.log(data);
-        //             var html = template('selectList', {data: data.result});
-        //             console.log(html);
-        //             $('.select').html(html);
-        //             $('.select').show();
-        //
-        //             // 为下拉列表注册点击事件
-        //             $('.select').on('tap', 'li', function () {
-        //                 console.log($(this).data('id'));
-        //                 id = $(this).data('id');
-        //                 var shopName = $(this).data('shopname');
-        //                 var html = shopName + '<i class="fa fa-caret-down" aria-hidden="true">';
-        //                 $('.shop').html(html);
-        //                 $('.shop').data('id', id);
-        //                 $('.select').hide();
-        //             })
-        //         }
-        //     })
-        // }else {
-        //     $(this).find('i').removeClass('fa-caret-up').addClass('fa-caret-down');
-        //     $('.select').hide();
-        // }
 
+    $('.shop').on('tap', function () {
         typeSelect(".shop", "http://localhost:9090/api/getgsshop", 'shop-selectList', '.shop-select');
     });
 
@@ -100,7 +67,12 @@ $(function () {
             success: function (data) {
                 var html = template('goods', {data: data.result});
                 $('.goods').html(html);
+                mui('.mui-scroll-wrapper').scroll({
+                    deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
+                });
             }
         })
     }
+
+
 });

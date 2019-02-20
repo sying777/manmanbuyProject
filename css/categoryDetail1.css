@@ -14,7 +14,7 @@ img {
 /* 实现头部 中间 底部的上中下布局 给body设置 flex布局 让头部和底部高度固定 中间flex1 自适应 */
 /* 设置body中的字体大小 */
 body {
-  font-size: .16rem;
+  font-size: 0.16rem;
   background-color: transparent;
   display: flex;
   flex-direction: column;
@@ -76,7 +76,7 @@ li {
 }
 #hxw-footer {
   background-color: #efefef;
-  height: .80rem;
+  height: 0.8rem;
 }
 #hxw-footer .function {
   border-top: 0.01rem solid #ccc;
@@ -121,12 +121,12 @@ li {
 }
 #xy-main .main-title {
   color: #5a5a5a;
-  height: .35rem;
-  font-size: .14rem;
-  line-height: .35rem;
+  height: 0.35rem;
+  font-size: 0.14rem;
+  line-height: 0.35rem;
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
-  padding-left: .1rem;
+  padding-left: 0.1rem;
   background: linear-gradient(#fff, #eeeeee);
 }
 #xy-main .main-title a {
@@ -135,29 +135,29 @@ li {
 #xy-main .content .detail-head {
   width: 100%;
   height: 2.5rem;
-  padding: .08rem;
+  padding: 0.08rem;
 }
 #xy-main .content .detail-head .pic {
   text-align: center;
-  margin: .08rem;
+  margin: 0.08rem;
 }
 #xy-main .content .detail-head .pic img {
   width: 1.5rem;
   height: 1.5rem;
 }
 #xy-main .content .detail-head .name {
-  font-size: .16rem;
+  font-size: 0.16rem;
   text-align: center;
-  line-height: .2rem;
+  line-height: 0.2rem;
   color: #000;
 }
 #xy-main .content .detail-tab .title {
   display: flex;
-  height: .35rem;
+  height: 0.35rem;
 }
 #xy-main .content .detail-tab .title a {
   flex: 1;
-  line-height: .35rem;
+  line-height: 0.35rem;
   text-align: center;
   color: #fff;
   background-color: #ff841d;
@@ -174,7 +174,7 @@ li {
   background-image: linear-gradient(#ffcf4d, #ffbc04);
 }
 #xy-main .content .detail-tab .content table {
-  height: .5rem;
+  height: 0.5rem;
 }
 #xy-main .content .detail-tab .content table tr {
   height: 100%;
@@ -182,7 +182,7 @@ li {
 }
 #xy-main .content .detail-tab .content table tr .p-pic > a {
   display: block;
-  width: .1rem;
+  width: 0.1rem;
 }
 #xy-main .content .detail-tab .content table tr .p-pic > a > img {
   width: 1rem;
@@ -195,63 +195,64 @@ li {
   text-align: center;
 }
 #xy-main .content .detail-tab .content table tr td > span {
-  line-height: .2rem;
+  line-height: 0.2rem;
 }
 #xy-main .content .detail-tab .content table .tab2 {
   display: none;
 }
 #xy-main .content .detail-explain p {
-  font-size: .14rem;
+  font-size: 0.14rem;
   color: #666;
-  padding: .1rem;
-  line-height: .20rem;
+  padding: 0.1rem;
+  line-height: 0.2rem;
 }
 #xy-main .content .detail-comment .title {
-  height: .4rem;
+  height: 0.4rem;
   background-color: #dbdbdb;
   border-top: 2px solid #7a7a7a;
   text-align: center;
-  line-height: .4rem;
+  line-height: 0.4rem;
 }
 #xy-main .content .detail-comment .comment-list > ul > li {
   border-bottom: 1px solid #ccc;
-  padding: .1rem;
+  padding: 0.1rem;
 }
 #xy-main .content .detail-comment .comment-list > ul > li > div:last-of-type {
-  margin-top: .06rem;
+  margin-top: 0.06rem;
 }
 #xy-main .content .detail-comment .comment-list > ul > li .comment-name {
-  font-size: .14rem;
+  font-size: 0.14rem;
   color: #999;
   display: flex;
   justify-content: space-between;
 }
 #xy-main .content .detail-comment .comment-list > ul > li .comment-name span:nth-of-type(1) {
-  padding-left: .05rem;
+  padding-left: 0.05rem;
 }
 #xy-main .content .detail-comment .comment-list > ul > li .comment-like {
-  margin-top: .05rem;
-  font-size: .14rem;
+  margin-top: 0.05rem;
+  font-size: 0.14rem;
   color: #666;
   display: flex;
   justify-content: space-between;
 }
 #xy-main .content .detail-comment .comment-list > ul > li .comment-like img {
-  width: .15rem;
-  height: .15rem;
+  width: 0.15rem;
+  height: 0.15rem;
 }
 #xy-main .content .detail-comment .comment-list > ul > li .comment-content {
-  font-size: .14rem;
-  line-height: .2rem;
+  font-size: 0.14rem;
+  line-height: 0.2rem;
 }
 #xy-main .content .look-more {
   width: 80%;
   text-align: center;
-  height: .30rem;
-  font-size: .14rem;
-  margin-top: .2rem;
-  margin-bottom: .2rem;
+  height: 0.3rem;
+  font-size: 0.14rem;
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
   margin-left: 0.4rem;
-  border-radius: .06rem;
+  border-radius: 0.06rem;
   background: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#ccc));
 }
+/*# sourceMappingURL=categoryDetail1.css.map */
