@@ -19,14 +19,14 @@ $(function () {
             });
             // 将生成的导航栏内容添加到nav-box中
             $('.nav-box').html(html);
+            // 给动态生成的导航栏逐一添加不同的跳转页面
+            
         }
     })
     // 3,点击更多按钮 将第三行的导航栏显示出来
     // 动态生成 事件委托
     $('.nav-box').on('tap', '.btn-more a', function () {
-        // alert('更多!');
-        // $('.btn-nav-link').removeClass('btn-hide');
-        $('.btn-three').toggleClass('btn-hide');
+        $('#gf-nav').toggleClass('navShow');
     })
 
     // 3,折扣列表
@@ -65,8 +65,11 @@ $(function () {
 
     // 2,点击小火箭 滑动回到页面顶部
     $('#rocket').on('tap', function () {
-        // scroll('0px',300);
-        // alert('点点点');
+        $('body,html').animate({
+            scrollTop: 0
+        }, 1000);
+    })
+    $('#toTop').on('tap', function () {
         $('body,html').animate({
             scrollTop: 0
         }, 1000);
@@ -77,19 +80,28 @@ $(function () {
  $('#dots').on('tap', function () {
         // alert('悬浮窗变大!');
         // $('#dot').animate({width:'80px',height:'80px'},200);
-         $('.dot-bg').toggleClass('dotBig');
-        //  $('.dot-icon').toggleClass('imgShow');
+        //  $('.dot-bg').toggleClass('dotBig');
         if($('.dot-icon').css("display") == "none"){
+            $('.dot-bg').addClass('dotBig');
             setTimeout(function(){
-                $('.dot-icon').toggleClass('imgShow');
-            },1000)
+                $('.link').toggleClass('xuanzhuan');
+                $('.dot-icon').show();
+
+            },500)
         }else{
-            $('.dot-icon').toggleClass('imgShow');
+            $('.dot-bg').removeClass('dotBig');
+            $('.link').toggleClass('xuanzhuan');
+            $('.dot-icon').hide();
         }
-
     })
+    // 悬浮窗的a标签跳转事件 事件委托
+    $('#dots').on('tap','a', function () {
+        var aAddr = $(this).attr('href');
+        // console.log(aAddr);
+        location= aAddr;
+    });
 
-
+//    悬浮窗的拖拽 移动事件
 var startX,startY,moveX,moveY,shortX,shortY,distanceX,distanceY;
     // touchstart事件
     $('#dots')[0].addEventListener('touchstart', function (e) {

@@ -18,7 +18,7 @@
     <!-- 1,网站头部 -->
     <header id="header">
         <!-- 顶部边栏 -->
-        <div class="top"><a href="#" class="logo"><img src="./images/header_logo.png" alt=""></a><a href="#" class="download"><img src="./images/header_app.png" alt=""></a> </div>
+        <div class="top"><a href="index.html" class="logo"><img src="./images/header_logo.png" alt=""></a><a href="#" class="download"><img src="./images/header_app.png" alt=""></a> </div>
         <!-- 搜索栏 -->
         <div class="gf-search"><input type="text" class="searchBox " placeholder="请输入你想比价的商品"><button type="button" class="btn-search">搜索</button></div>
     </header>
@@ -162,7 +162,7 @@
         <!-- 5,查看更多 -->
         <section id="gf-more">
             <!-- 跳转到省钱控页面 -->
-            <a href="#">更多优惠信息>></a>
+            <a href="./pages/moneyctrl.html">更多优惠信息>></a>
         </section>
     </main>
    
@@ -176,7 +176,7 @@
             <div class="function">
                 <a href="#" class="login">登录</a>
                 <a href="#" class="register">注册</a>
-                <a href="#" class="return"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i> 返回顶部</a>
+                <a href="#" class="return" id="toTop"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i> 返回顶部</a>
             </div>
             <div class="download">
                 <a href="#">手机APP下载 </a>   <span>慢慢买手机版 </span> <span>-- 掌上比价平台</span>
@@ -186,29 +186,18 @@
 
     <!-- 两个小工具 -->
     <!-- 1,悬浮窗 -->
-    <!-- <div id="dot">
-        <a href="#"><img class="dot-icon" src="./images/ic_bcj.png" alt=""></a>
-        <a href="#"><img class="dot-icon" src="./images/ic_bcj.png" alt=""></a>
-        <a href="#"><img class="dot-icon" src="./images/ic_bcj.png" alt=""></a>
-        <a href="#"><img class="dot-icon" src="./images/ic_bcj.png" alt=""></a>
-        <a href="#"><img class="dot-icon" src="./images/ic_bcj.png" alt=""></a>
-        <a href="#"><img class="dot-icon" src="./images/ic_bcj.png" alt=""></a>
-        <a href="#"><img class="dot-icon" src="./images/ic_bcj.png" alt=""></a>
-        <a href="#"><img class="dot-icon" src="./images/ic_bcj.png" alt=""></a>
-    </div> -->
-
     <div id="dots">
         <div class="dot-bg">
 
         </div>
         <div class="link">
-                <a href="#"><img class="dot-icon" src="./images/ic_bcj.png" alt=""></a>
-                <a href="#"><img class="dot-icon" src="./images/ic_coudanpin.png" alt=""></a>
-                <a href="#"><img class="dot-icon" src="./images/ic_cu.png" alt=""></a>
-                <a href="#"><img class="dot-icon" src="./images/ic_kb.png" alt=""></a>
-                <a href="#"><img class="dot-icon" src="./images/ic_mall.png" alt=""></a>
-                <a href="#"><img class="dot-icon" src="./images/ic_pp.png" alt=""></a>
-                <a href="#"><img class="dot-icon" src="./images/ic_temai.png" alt=""></a>
+                <a href="./pages/baicaijia.html"><img class="dot-icon" src="./images/ic_bcj.png" alt=""></a>
+                <a href="./pages/gsproduct.html"><img class="dot-icon" src="./images/ic_coudanpin.png" alt=""></a>
+                <a href="./pages/moneyctrl.html"><img class="dot-icon" src="./images/ic_cu.png" alt=""></a>
+                <a href="./pages/category.html"><img class="dot-icon" src="./images/ic_kb.png" alt=""></a>
+                <a href="./pages/sitenav.html"><img class="dot-icon" src="./images/ic_mall.png" alt=""></a>
+                <a href="./pages/brandTitle.html"><img class="dot-icon" src="./images/ic_pp.png" alt=""></a>
+                <a href="./pages/coupon.html"><img class="dot-icon" src="./images/ic_temai.png" alt=""></a>
         </div>
             
         </div>
@@ -216,21 +205,16 @@
     <div id="rocket">
         <i class="fa fa-rocket" aria-hidden="true"></i>
     </div>
-
+   
     <!-- 创建导航栏的模板 -->
     <script id="navTpl" type="text/html">
         {{each data value index}}
-
            {{if value.indexmenuId == 7}}
         <div class="mui-col-xs-3  btn-nav-link btn-more">
                 <a href="javascript:;" data-id="{{value.indexmenuId}}">
-          {{else if value.indexmenuId >7}}
-        <div class="mui-col-xs-3  btn-nav-link btn-hide btn-three">
-                <a href="{{value.titlehref}}" data-id="{{value.indexmenuId}}">
             {{else}}
             <div class="mui-col-xs-3  btn-nav-link">  
-            <a href="{{value.titlehref}}" data-id="{{value.indexmenuId}}">
-
+            <a href="pages/{{value.titlehref}}" data-id="{{value.indexmenuId}}">
             {{/if}}
 
                 <!-- <img src="./images/ic_search.png" alt=""> -->
@@ -247,7 +231,7 @@
         {{each data value index}}
         <li class="mui-table-view-cell mui-media product-line">
                 <!-- 跳转到商品详情页面 -->
-                <a href="javascript:;" data-id="{{value.productId}}">
+                <a href="./pages/moneyctrl.html" data-id="{{value.productId}}">
                     <!-- <img class="mui-media-object mui-pull-left product-img" src="./images/ic_bcj.png"> -->
                     {{@value.productImg2}}
                     <div class="mui-media-body product-text">
