@@ -9,17 +9,12 @@ body {
   height: 100vh;
   font-size: .16rem;
 }
-.mainpage {
-  flex: 1;
-  position: relative;
-  overflow: hidden;
-}
-.mainpage #header {
+#header {
   display: flex;
   height: .5rem;
   background-color: #ff4e49;
 }
-.mainpage #header .center {
+#header .center {
   flex: 1;
   height: .5rem;
   line-height: .5rem;
@@ -27,52 +22,57 @@ body {
   color: #fff;
   margin: 0;
 }
-.mainpage #header .left {
+#header .left {
   width: .48rem;
   height: .5rem;
   line-height: .5rem;
   text-align: center;
   color: #fff;
 }
-.mainpage #header .download {
+#header .download {
   width: .4rem;
   height: .4rem;
   margin: .05rem .05rem;
   text-align: center;
   color: #fff;
 }
-.mainpage #header .download img {
+#header .download img {
   width: 100%;
 }
-.mainpage #main .product-list {
+#main {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+#main .product-list {
   background-color: #fff;
 }
-.mainpage #main .product-list .product-info {
+#main .product-list .product-info {
   padding: .05rem;
 }
-.mainpage #main .product-list .product-info .mui-col-xs-4 {
+#main .product-list .product-info .mui-col-xs-4 {
   padding: .1rem;
 }
-.mainpage #main .product-list .product-info .mui-col-xs-4 img {
+#main .product-list .product-info .mui-col-xs-4 img {
   width: 100%;
 }
-.mainpage #main .product-list .product-info .mui-col-xs-8 {
+#main .product-list .product-info .mui-col-xs-8 {
   padding-top: .1rem;
   text-align: left;
 }
-.mainpage #main .product-list .product-info .mui-col-xs-8 .productName {
+#main .product-list .product-info .mui-col-xs-8 .productName {
   color: black;
   margin: 0;
 }
-.mainpage #main .product-list .product-info .mui-col-xs-8 .productPinkage {
+#main .product-list .product-info .mui-col-xs-8 .productPinkage {
   color: goldenrod;
   margin: 0;
 }
-.mainpage #main .product-list .product-info .mui-col-xs-8 .productFromTime {
+#main .product-list .product-info .mui-col-xs-8 .productFromTime {
   margin-top: .3rem;
   font-size: .12rem;
 }
-.mainpage #main .product-list .product-info .mui-col-xs-8 .productFromTime .productComCount {
+#main .product-list .product-info .mui-col-xs-8 .productFromTime .productComCount {
   float: right;
 }
 #paging {
