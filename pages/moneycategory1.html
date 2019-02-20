@@ -18,42 +18,42 @@
 </head>
 
 <body>
-    <div class="mui-scroll-wrapper">
-        <div class="mui-scroll">
-            <!--这里放置真实显示的DOM内容-->
-            <!-- 1,网站头部 -->
-            <header id="header">
-                <!-- 顶部边栏 -->
-                <a href="javascript:history.back();" class="mui-icon mui-icon-back left"></a>
-                <h4 class="center">国内折扣</h4>
-                <a href="#" class="download">
-                    <img src="../images/header_app.png" alt="">
-                </a>
+    <!-- 1,网站头部 -->
+    <header id="header">
+        <!-- 顶部边栏 -->
+        <a href="javascript:history.back();" class="mui-icon mui-icon-back left"></a>
+        <h4 class="center">国内折扣</h4>
+        <a href="#" class="download">
+            <img src="../images/header_app.png" alt="">
+        </a>
 
-            </header>
-            <!-- 网站主体 -->
-            <main id="main">
+    </header>
+    <!-- 网站主体 -->
+    <main id="main">
+        <div class="mui-scroll-wrapper">
+            <div class="mui-scroll">
+                <!--这里放置真实显示的DOM内容-->
                 <!-- 商品列表 -->
                 <div class="product-detail">
                     <div class="product-info">
                         <!-- <p class="productName">西域美农新疆特产五星和田红枣250g*2</p>
-                        <p class="productPrice">19.8元</p>
-                        <p class="productFromTime">
-                            <span class="productFrom">京东商城</span>
-                            <span class="productTime">10-22 13:28</span>
-                            <span class="productCity">chenjin/慢慢买</span>
-                        </p>
-                        <p class="productInfo">
-                            jfakhjfl;asfljafklaj 卡迪夫卡拉胶看风景阿卡时间案件法律爱十分骄傲斯里兰卡啊埃及法加奥拉夫
-                        </p>
-                        <img src="../images/gengduo.png" alt="">
-                        <div class="productCity">
+                <p class="productPrice">19.8元</p>
+                <p class="productFromTime">
+                    <span class="productFrom">京东商城</span>
+                    <span class="productTime">10-22 13:28</span>
+                    <span class="productCity">chenjin/慢慢买</span>
+                </p>
+                <p class="productInfo">
+                    jfakhjfl;asfljafklaj 卡迪夫卡拉胶看风景阿卡时间案件法律爱十分骄傲斯里兰卡啊埃及法加奥拉夫
+                </p>
+                <img src="../images/gengduo.png" alt="">
+                <div class="productCity">
 
-                            1111
-                        </div>
-                        <div>
-                            <button type="button" class="mui-btn mui-btn-warning">立即购买</button>
-                        </div> -->
+                    1111
+                </div>
+                <div>
+                    <button type="button" class="mui-btn mui-btn-warning">立即购买</button>
+                </div> -->
                     </div>
                     <div class="product-mmbweixin">
                         <img src="../images/mmbweixin2.png" alt="">
@@ -61,9 +61,11 @@
                         <div class="CommentContent"></div>
                     </div>
                 </div>
-            </main>
+            </div>
         </div>
-    </div>
+
+    </main>
+
 
     <!-- 6,网站底部 -->
     <footer id="footer">
@@ -79,7 +81,7 @@
         </div>
     </footer>
 
-    
+
     <script type="text/html" id="discountProductTpl">
         {{each result value index}}
         <!-- <div class="product-info"> -->

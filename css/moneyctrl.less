@@ -12,76 +12,74 @@ body{
     height: 100vh;
     font-size: .16rem;
 }
-.mainpage{
+
+#header{
+    display: flex;
+    height: .5rem;
+    background-color: @main-color;
+    .center{
+        flex: 1;
+        height: .5rem;
+        line-height: .5rem;
+        text-align: center;
+        color: #fff;
+        margin: 0;
+    }
+    .left{
+        width: .48rem;
+        height: .5rem;
+        line-height: .5rem;
+        text-align: center;
+        color: #fff;
+    }
+    .download{
+        width: .4rem;
+        height: .4rem;
+        margin: .05rem .05rem;
+        text-align: center;
+        color: #fff;
+        img{
+            width: 100%;
+        }
+    }
+}
+#main{
     flex: 1;
     position: relative;
     overflow: hidden;
-    #header{
-        display: flex;
-        height: .5rem;
-        background-color: @main-color;
-        .center{
-            flex: 1;
-            height: .5rem;
-            line-height: .5rem;
-            text-align: center;
-            color: #fff;
-            margin: 0;
-        }
-        .left{
-            width: .48rem;
-            height: .5rem;
-            line-height: .5rem;
-            text-align: center;
-            color: #fff;
-        }
-        .download{
-            width: .4rem;
-            height: .4rem;
-            margin: .05rem .05rem;
-            text-align: center;
-            color: #fff;
-            img{
-                width: 100%;
-            }
-        }
-    }
-    #main{
-        
-        .product-list{
-            background-color: #fff;
-            .product-info{
-                padding: .05rem;
-                .mui-col-xs-4{
-                    padding: .1rem;
-                    img{
-                        width: 100%;
-                    }
+    .product-list{
+        background-color: #fff;
+        .product-info{
+            padding: .05rem;
+            .mui-col-xs-4{
+                padding: .1rem;
+                img{
+                    width: 100%;
                 }
-               .mui-col-xs-8{
-                   padding-top: .1rem;
-                   text-align: left;
-                   .productName{
-                       color: black;
-                       margin: 0;
-                   }
-                   .productPinkage{
-                       color: goldenrod;
-                       margin: 0;
-                   }
-                   .productFromTime{
-                       margin-top: .3rem;
-                       font-size: .12rem;
-                       .productComCount{
-                           float: right;
-                       }
-                   }
-               } 
             }
+           .mui-col-xs-8{
+               padding-top: .1rem;
+               text-align: left;
+               .productName{
+                   color: black;
+                   margin: 0;
+               }
+               .productPinkage{
+                   color: goldenrod;
+                   margin: 0;
+               }
+               .productFromTime{
+                   margin-top: .3rem;
+                   font-size: .12rem;
+                   .productComCount{
+                       float: right;
+                   }
+               }
+           } 
         }
     }
-
 }
+
 
 #paging{
     padding: 0.1rem 0.3rem;
