@@ -84,12 +84,13 @@ $(function () {
         if($('.dot-icon').css("display") == "none"){
             $('.dot-bg').addClass('dotBig');
             setTimeout(function(){
-                // $('.dot-icon').toggleClass('imgShow');
-                $('.dot-icon').show()
+                $('.link').toggleClass('xuanzhuan');
+                $('.dot-icon').show();
+
             },500)
         }else{
             $('.dot-bg').removeClass('dotBig');
-            // $('.dot-icon').toggleClass('imgShow');
+            $('.link').toggleClass('xuanzhuan');
             $('.dot-icon').hide();
         }
     })

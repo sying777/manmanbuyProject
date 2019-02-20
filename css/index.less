@@ -250,7 +250,6 @@ body {
         // top: 0;
         // left: 0;
     transition: all .5s;
-
     }
 
     .link {
@@ -259,9 +258,13 @@ body {
         left: 0;
         width: 100%;
         height: 100%;
+        transition: all 1s;
+        &.xuanzhuan{
+            transform: rotateZ(360deg);
+        }
         a {
-            width: .34rem;
-            height: .34rem;
+            // width: .34rem;
+            // height: .34rem;
             position: absolute;
             .dot-icon {
                 display: none;
