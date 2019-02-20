@@ -23,5 +23,18 @@ $(function(){
           location.href = "brandDetail.html?id="+brandTitleId + "&brandTitle="+brandTitle;
     });
 
+    //跳转主页面
+    $(".top").on("tap",function(){
+        location = "../index.html";
+    });
+
+
+    //返回顶部
+    $('.return').on('tap', function () {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 500);
+    });
+
     
 });
