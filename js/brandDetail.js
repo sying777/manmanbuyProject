@@ -19,7 +19,7 @@ $(function () {
 
     $('.title span').text(brandTitle);
 
-    // 请求渲染top0
+    // 请求渲染top10
     $.ajax({
         url: 'http://localhost:9090/api/getbrand',
         data: {
@@ -30,6 +30,12 @@ $(function () {
             if (data.result) {
                 var top10html = template('top10Tpl', data);
                 $('.top10 .mui-table-view').html(top10html);
+
+                // 点击每个选项跳转到商品列表
+                $('.top10').on('tap','.mui-table-view-cell',function () {
+                    var categoryId = this.dataset.categoryid;
+                    location = '/pages/categoryDetail.html?categoryId='+ categoryId;
+                  })
             }
         }
     })
@@ -49,6 +55,13 @@ $(function () {
             if (data.result) {
                 var volumeHtml = template('volumeTpl', data);
                 $('.volume .mui-table-view').html(volumeHtml);
+
+                // 点击跳转到商品详情
+                $('.volume').on('tap','.mui-table-view-cell',function () {
+                    var categoryId = this.dataset.categoryid;
+                    var productId = this.dataset.productid;
+                    location = '/pages/categoryDetail1.html?categoryid=' + categoryId + '&productId=' + productId;
+                  })
             }
 
             var productid = data.result[0].productId;
@@ -68,13 +81,25 @@ $(function () {
                     }
                     console.log(data);
                     var newCommentsHtml = template('newCommentsTpl',data);
-                    $('.newComments .mui-table-view').html(newCommentsHtml)
+                    $('.newComments .mui-table-view').html(newCommentsHtml);
+
+                    // 点击跳转到商品详情
+                $('.newComments').on('tap','.mui-table-view-cell',function () {
+                    var categoryId = this.dataset.categoryid;
+                    var productId = this.dataset.productid;
+                    location = '/pages/categoryDetail1.html?categoryid=' + categoryId + '&productId=' + productId;
+                  })
                 }
             })
         }
     })
 
 
+    //当点击跳转链接后，回到页面顶部位置
+    $(".return").on('tap',function(){
+        $('html,body').animate({scrollTop:0},500);
+        return false;
+    });
 
 
 

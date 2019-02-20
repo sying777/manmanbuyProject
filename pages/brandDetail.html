@@ -128,7 +128,7 @@
 
     <script type="text/html" id="top10Tpl">
         {{each result value index}}
-    <li class="mui-table-view-cell mui-media">
+    <li class="mui-table-view-cell mui-media" data-categoryId="{{value.categoryId}}">
             <a href="javascript:;">
                 {{if index == 0}}
                 <div class="mui-pull-left" style="background-color: red;">{{index + 1}}</div>
@@ -150,7 +150,7 @@
 
     <script type="text/html" id="volumeTpl">
         {{each result value index}}
-        <li class="mui-table-view-cell mui-media">
+        <li class="mui-table-view-cell mui-media" data-categoryid="{{value.categoryId}}" data-productid="{{value.productId}}">
                 <a href="javascript:;">
                     <div class="mui-media-object mui-pull-left productImg">
                             {{@value.productImg}}
@@ -167,7 +167,7 @@
 
     <script type="text/html" id="newCommentsTpl">
         {{each result value index}}
-        <li class="mui-table-view-cell mui-media">
+        <li class="mui-table-view-cell mui-media" data-categoryid="{{value.categoryId}}" data-productid="{{value.productId}}">
                 <a href="javascript:;">
                     <div class="up">
                             <div class="mui-media-object mui-pull-left productImg">
@@ -206,8 +206,9 @@
 
 
 
-
+    <script src="../lib/jquery/jquery-3.1.1.min.js"></script>
     <script src="../lib/zepto/zepto.min.js"></script>
+    <script src="../lib/zepto/touch.js"></script>
     <script src="../lib/mui/js/mui.min.js"></script>
     <script src="../lib/artTemplate/template-web.js"></script>
     <script src="../js/brandDetail.js"></script>
