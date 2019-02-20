@@ -14,7 +14,7 @@ img {
 /* 实现头部 中间 底部的上中下布局 给body设置 flex布局 让头部和底部高度固定 中间flex1 自适应 */
 /* 设置body中的字体大小 */
 body {
-  font-size: 0.16rem;
+  font-size: .16rem;
   background-color: transparent;
   display: flex;
   flex-direction: column;
@@ -43,13 +43,13 @@ body {
   border-bottom: 1px solid #eee;
 }
 #header .content {
-  height: 0.5rem;
+  height: .5rem;
   background-color: #ffa026;
   display: flex;
   justify-content: space-between;
-  padding: 0.02rem 0.1rem;
-  font-size: 0.2rem;
-  line-height: 0.46rem;
+  padding: .02rem .1rem;
+  font-size: .2rem;
+  line-height: .46rem;
   text-align: center;
   color: white;
 }
@@ -66,15 +66,15 @@ body {
 }
 #main .title .keyword {
   display: flex;
-  height: 0.3rem;
-  line-height: 0.3rem;
+  height: .30rem;
+  line-height: .30rem;
   text-align: center;
-  font-size: 0.16rem;
+  font-size: .16rem;
   background-color: #fff;
   overflow: hidden;
 }
 #main .title .keyword i {
-  margin-left: 0.1rem;
+  margin-left: .1rem;
 }
 #main .title .keyword li:nth-child(4) {
   border-left: 1px solid #f1f1f1;
@@ -99,7 +99,7 @@ body {
   color: hotpink;
 }
 #main .content {
-  padding: 0.1rem 0.1rem;
+  padding: .1rem .1rem;
 }
 #main .content ul {
   display: flex;
@@ -113,8 +113,8 @@ body {
   flex-direction: column;
   justify-content: space-between;
   height: 2.3rem;
-  padding: 0.05rem;
-  margin-bottom: 0.1rem;
+  padding: .05rem;
+  margin-bottom: .1rem;
 }
 #main .content ul li img {
   width: 100%;
@@ -123,7 +123,7 @@ body {
 #main .content ul li .name {
   text-align: center;
   color: #000;
-  font-size: 0.1rem;
+  font-size: .1rem;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -132,19 +132,19 @@ body {
   display: flex;
   justify-content: space-between;
   color: red;
-  font-size: 0.18rem;
+  font-size: .18rem;
 }
 #main .content ul li .price .btn {
   color: white;
   background-color: #ff9501;
   display: block;
-  font-size: 0.14rem;
-  padding: 0.05em 0.1rem;
-  border-radius: 0.03rem;
+  font-size: .14rem;
+  padding: .05em .1rem;
+  border-radius: .03rem;
 }
 #hxw-footer {
   background-color: #efefef;
-  height: 0.8rem;
+  height: .80rem;
 }
 #hxw-footer .function {
   border-top: 0.01rem solid #ccc;
@@ -187,4 +187,3 @@ body {
 #hxw-footer .download span a {
   color: #666;
 }
-/*# sourceMappingURL=getSingle.css.map */

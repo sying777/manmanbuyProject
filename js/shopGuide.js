@@ -13,4 +13,11 @@ $(function(){
             $("#xy-main ul").html(html);
         }
     });
+
+    //返回顶部
+    $('.return').on('tap', function () {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 500);
+    });
 });

@@ -13,7 +13,7 @@
     <!-- 引入mui.css -->
     <link rel="stylesheet" href="../lib/mui/css/mui.min.css">
     <!-- 引入公共less文件 -->
-    <link rel="stylesheet/less" href="../css/base.less">
+    <!-- <link rel="stylesheet/less" href="../css/base.less"> -->
     <!-- 引入当前页面的less文件 -->
     <link rel="stylesheet/less" href="../css/shopGuide.less">
     <!-- 引入编译less文件的less.js -->
@@ -23,7 +23,7 @@
 <body>
     <!-- 头部模块 -->
     <header id="xy-header">
-        <a href="#">
+        <a href="../index.html">
             <i class="fa fa-angle-left"></i>
         </a>
         <h4>商城导航</h4>
@@ -32,30 +32,27 @@
         </a>
     </header>
     <!-- 主体模块 -->
-    <div class="mui-scroll-wrapper">
-        <div class="mui-scroll">
-            <main id="xy-main">
-                <ul class="clearfloat">
-                    <li>
-                        <img src="" alt="">
-                        <span></span>
-                    </li>
-                </ul>
-            </main>
-            <!-- 6,网站底部 -->
-            <footer id="gf-footer">
-                <div class="function">
-                    <a href="#" class="login">登录</a>
-                    <a href="#" class="register">注册</a>
-                    <a href="#" class="return"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i> 返回顶部</a>
-                </div>
-                <div class="download">
-                    <a href="#">手机APP下载 </a> <span>慢慢买手机版 </span> <span>-- 掌上比价平台</span>
-                    <p class="download-url">m.manmanbuy.com</p>
-                </div>
-            </footer>
+    <main id="xy-main">
+        <ul class="clearfloat">
+            <li>
+                <img src="" alt="">
+                <span></span>
+            </li>
+        </ul>
+    </main>
+    <!-- 6,网站底部 -->
+    <footer id="xy-footer">
+        <div class="function">
+            <a href="#" class="login">登录</a>
+            <a href="#" class="register">注册</a>
+            <a href="#" class="return"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i> 返回顶部</a>
         </div>
-    </div>
+        <div class="download">
+            <a href="#">手机APP下载 </a> <span>慢慢买手机版 </span> <span>-- 掌上比价平台</span>
+            <p class="download-url">m.manmanbuy.com</p>
+        </div>
+    </footer>
+
 </body>
 
 </html>
@@ -87,3 +84,5 @@
 <script src="../lib/artTemplate/template-web.js"></script>
 <!-- 引入brandTitle.js -->
 <script src="../js/shopGuide.js"></script>
+<!-- 引入jquery-3.1.1.min.js -->
+<script src="../lib/jquery/jquery-3.1.1.min.js"></script>
