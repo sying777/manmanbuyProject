@@ -4,6 +4,10 @@
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
 }
+body,
+html {
+  transition: absolute 2s;
+}
 li {
   list-style: none;
 }
