@@ -119,7 +119,11 @@ li {
 #hxw-footer .download span a {
   color: #666;
 }
-#xy-main .main-title {
+#xy-main {
+  position: relative;
+  flex: 1;
+}
+#xy-main .mui-scroll-wrapper .mui-scroll .main-title {
   color: #5a5a5a;
   height: .35rem;
   font-size: .14rem;
@@ -129,33 +133,33 @@ li {
   padding-left: .1rem;
   background: linear-gradient(#fff, #eeeeee);
 }
-#xy-main .main-title a {
+#xy-main .mui-scroll-wrapper .mui-scroll .main-title a {
   color: #5a5a5a;
 }
-#xy-main .content .detail-head {
+#xy-main .mui-scroll-wrapper .mui-scroll .content .detail-head {
   width: 100%;
   height: 2.5rem;
   padding: .08rem;
 }
-#xy-main .content .detail-head .pic {
+#xy-main .mui-scroll-wrapper .mui-scroll .content .detail-head .pic {
   text-align: center;
   margin: .08rem;
 }
-#xy-main .content .detail-head .pic img {
+#xy-main .mui-scroll-wrapper .mui-scroll .content .detail-head .pic img {
   width: 1.5rem;
   height: 1.5rem;
 }
-#xy-main .content .detail-head .name {
+#xy-main .mui-scroll-wrapper .mui-scroll .content .detail-head .name {
   font-size: .16rem;
   text-align: center;
   line-height: .2rem;
   color: #000;
 }
-#xy-main .content .detail-tab .title {
+#xy-main .mui-scroll-wrapper .mui-scroll .content .detail-tab .title {
   display: flex;
   height: .35rem;
 }
-#xy-main .content .detail-tab .title a {
+#xy-main .mui-scroll-wrapper .mui-scroll .content .detail-tab .title a {
   flex: 1;
   line-height: .35rem;
   text-align: center;
@@ -164,87 +168,87 @@ li {
   border-top: 1px solid #c14d00;
   border-bottom: 1px solid #c14d00;
 }
-#xy-main .content .detail-tab .title a:not(:last-child) {
+#xy-main .mui-scroll-wrapper .mui-scroll .content .detail-tab .title a:not(:last-child) {
   border-right: 1px solid #c14d00;
 }
-#xy-main .content .detail-tab .title a:nth-of-type(1) {
+#xy-main .mui-scroll-wrapper .mui-scroll .content .detail-tab .title a:nth-of-type(1) {
   background-image: linear-gradient(#ffa631, #ff9102);
 }
-#xy-main .content .detail-tab .title a:nth-of-type(1) ~ a {
+#xy-main .mui-scroll-wrapper .mui-scroll .content .detail-tab .title a:nth-of-type(1) ~ a {
   background-image: linear-gradient(#ffcf4d, #ffbc04);
 }
-#xy-main .content .detail-tab .content table {
+#xy-main .mui-scroll-wrapper .mui-scroll .content .detail-tab .content table {
   height: .5rem;
 }
-#xy-main .content .detail-tab .content table tr {
+#xy-main .mui-scroll-wrapper .mui-scroll .content .detail-tab .content table tr {
   height: 100%;
   border-bottom: 0.01rem solid #ccc;
 }
-#xy-main .content .detail-tab .content table tr .p-pic > a {
+#xy-main .mui-scroll-wrapper .mui-scroll .content .detail-tab .content table tr .p-pic > a {
   display: block;
   width: .1rem;
 }
-#xy-main .content .detail-tab .content table tr .p-pic > a > img {
+#xy-main .mui-scroll-wrapper .mui-scroll .content .detail-tab .content table tr .p-pic > a > img {
   width: 1rem;
 }
-#xy-main .content .detail-tab .content table tr td > a {
+#xy-main .mui-scroll-wrapper .mui-scroll .content .detail-tab .content table tr td > a {
   color: black;
 }
-#xy-main .content .detail-tab .content table tr td.red {
+#xy-main .mui-scroll-wrapper .mui-scroll .content .detail-tab .content table tr td.red {
   color: red;
   text-align: center;
 }
-#xy-main .content .detail-tab .content table tr td > span {
+#xy-main .mui-scroll-wrapper .mui-scroll .content .detail-tab .content table tr td > span {
   line-height: .2rem;
 }
-#xy-main .content .detail-tab .content table .tab2 {
+#xy-main .mui-scroll-wrapper .mui-scroll .content .detail-tab .content table .tab2 {
   display: none;
 }
-#xy-main .content .detail-explain p {
+#xy-main .mui-scroll-wrapper .mui-scroll .content .detail-explain p {
   font-size: .14rem;
   color: #666;
   padding: .1rem;
   line-height: .20rem;
 }
-#xy-main .content .detail-comment .title {
+#xy-main .mui-scroll-wrapper .mui-scroll .content .detail-comment .title {
   height: .4rem;
   background-color: #dbdbdb;
   border-top: 2px solid #7a7a7a;
   text-align: center;
   line-height: .4rem;
 }
-#xy-main .content .detail-comment .comment-list > ul > li {
+#xy-main .mui-scroll-wrapper .mui-scroll .content .detail-comment .comment-list > ul > li {
   border-bottom: 1px solid #ccc;
   padding: .1rem;
 }
-#xy-main .content .detail-comment .comment-list > ul > li > div:last-of-type {
+#xy-main .mui-scroll-wrapper .mui-scroll .content .detail-comment .comment-list > ul > li > div:last-of-type {
   margin-top: .06rem;
 }
-#xy-main .content .detail-comment .comment-list > ul > li .comment-name {
+#xy-main .mui-scroll-wrapper .mui-scroll .content .detail-comment .comment-list > ul > li .comment-name {
   font-size: .14rem;
   color: #999;
   display: flex;
   justify-content: space-between;
 }
-#xy-main .content .detail-comment .comment-list > ul > li .comment-name span:nth-of-type(1) {
+#xy-main .mui-scroll-wrapper .mui-scroll .content .detail-comment .comment-list > ul > li .comment-name span:nth-of-type(1) {
   padding-left: .05rem;
 }
-#xy-main .content .detail-comment .comment-list > ul > li .comment-like {
+#xy-main .mui-scroll-wrapper .mui-scroll .content .detail-comment .comment-list > ul > li .comment-like {
   margin-top: .05rem;
   font-size: .14rem;
   color: #666;
   display: flex;
   justify-content: space-between;
 }
-#xy-main .content .detail-comment .comment-list > ul > li .comment-like img {
+#xy-main .mui-scroll-wrapper .mui-scroll .content .detail-comment .comment-list > ul > li .comment-like img {
   width: .15rem;
   height: .15rem;
 }
-#xy-main .content .detail-comment .comment-list > ul > li .comment-content {
+#xy-main .mui-scroll-wrapper .mui-scroll .content .detail-comment .comment-list > ul > li .comment-content {
   font-size: .14rem;
   line-height: .2rem;
 }
-#xy-main .content .look-more {
+#xy-main .mui-scroll-wrapper .mui-scroll .content .look-more {
   width: 80%;
   text-align: center;
   height: .30rem;

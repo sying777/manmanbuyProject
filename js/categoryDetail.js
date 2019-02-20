@@ -77,6 +77,11 @@ $(function () {
             
         }
     })
+
+    $('.back').on('tap',function (e) {
+        e.preventDefault();
+        mui('.mui-scroll-wrapper').scroll().scrollTo(0,0,1000);
+    })
     
     
 
