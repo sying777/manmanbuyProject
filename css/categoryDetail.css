@@ -80,63 +80,65 @@ li {
   overflow: scroll;
   flex: 1;
   margin-top: .1rem;
-  padding-bottom: .3rem;
+  padding-bottom: .1rem;
+  display: flex;
+  position: relative;
 }
-#main #nav {
+#main .mui-scroll-wrapper .mui-scroll #nav {
   height: .3rem;
 }
-#main #nav .nav-left {
+#main .mui-scroll-wrapper .mui-scroll #nav .nav-left {
   float: left;
   margin-left: .05rem;
   line-height: .3rem;
 }
-#main #nav .nav-left > a {
+#main .mui-scroll-wrapper .mui-scroll #nav .nav-left > a {
   color: black;
   font-size: .13rem;
 }
-#main #nav .nav-right {
+#main .mui-scroll-wrapper .mui-scroll #nav .nav-right {
   float: right;
   line-height: .3rem;
 }
-#main #nav .nav-right .mui-btn {
+#main .mui-scroll-wrapper .mui-scroll #nav .nav-right .mui-btn {
   margin-right: .08rem;
   width: .6rem;
   font-size: .14rem;
   border-radius: .06rem;
   background: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#ccc));
 }
-#main #detail .listDetail > li {
+#main .mui-scroll-wrapper .mui-scroll #detail .listDetail > li {
   height: 1.0rem;
   padding: .12rem 0.05rem;
   border-bottom: .01rem solid #ccc;
 }
-#main #detail .listDetail > li .product {
+#main .mui-scroll-wrapper .mui-scroll #detail .listDetail > li .product {
   display: flex;
 }
-#main #detail .listDetail > li .product .pic {
+#main .mui-scroll-wrapper .mui-scroll #detail .listDetail > li .product .pic {
   width: 1.2rem;
 }
-#main #detail .listDetail > li .product .pic > img {
+#main .mui-scroll-wrapper .mui-scroll #detail .listDetail > li .product .pic > img {
   width: 100%;
 }
-#main #detail .listDetail > li .product .shop-content {
+#main .mui-scroll-wrapper .mui-scroll #detail .listDetail > li .product .shop-content {
   flex: 1;
 }
-#main #detail .listDetail > li .product .shop-content .rightFirst {
+#main .mui-scroll-wrapper .mui-scroll #detail .listDetail > li .product .shop-content .rightFirst {
   font-size: .14rem;
   color: black;
   margin-bottom: .05rem;
   line-height: .16rem;
 }
-#main #detail .listDetail > li .product .shop-content .rightSecond {
+#main .mui-scroll-wrapper .mui-scroll #detail .listDetail > li .product .shop-content .rightSecond {
   font-size: .16rem;
   color: red;
 }
-#main #detail .listDetail > li .product .shop-content .other {
+#main .mui-scroll-wrapper .mui-scroll #detail .listDetail > li .product .shop-content .other {
   font-size: .12rem;
   color: #c6c6c6;
 }
-#main #detail .listDetail > li .product .shop-content .other > span {
+#main .mui-scroll-wrapper .mui-scroll #detail .listDetail > li .product .shop-content .other > span {
   margin-right: .05rem;
 }
 #page {

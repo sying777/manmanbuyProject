@@ -57,46 +57,55 @@
 #main{
     flex:1;
     margin-top: .1rem;
-    .category-table{
-        line-height: .2rem;
-        font-size: .16rem;
-        font-weight: 600;
-        background-color: #ededed;
-        padding: 0;
+    position: relative;
+    .mui-scroll-wrapper{
+        position: static;
+        .mui-scroll{
+            // position: absolute;
+            .category-table{
+                line-height: .2rem;
+                font-size: .16rem;
+                font-weight: 600;
+                background-color: #ededed;
+                padding: 0;
         
-        .big-title{
-            margin: .1rem;
-
-        }
-        .mui-collapse-content{
-         margin-top: 0;
-         padding-top: 0;
-            .category-ul{
-                display: flex;
-                flex-wrap: wrap;
-                border-top: 0.01rem solid #d3d3d3;
-                // border-bottom: 0.01rem solid #d3d3d3;
-                .category-rows{
-                    width: 33.3333%;
-                    text-align: center;
-                    font-size: .14rem;
-                    font-weight: normal;
-                    border-right: 0.01rem solid #d3d3d3;
-                    border-bottom: 0.01rem solid #d3d3d3;
-                    padding: .08rem;
-                    >a{
-                        display: block;
-                        width: 100%;
-                        text-align: center;
-                        margin: 0;
-                        color: black;
+                .big-title{
+                    margin: .1rem;
+        
+                }
+                .mui-collapse-content{
+                 margin-top: 0;
+                 padding-top: 0;
+                    .category-ul{
+                        display: flex;
+                        flex-wrap: wrap;
+                        border-top: 0.01rem solid #d3d3d3;
+                        // border-bottom: 0.01rem solid #d3d3d3;
+                        .category-rows{
+                            width: 33.3333%;
+                            text-align: center;
+                            font-size: .14rem;
+                            font-weight: normal;
+                            border-right: 0.01rem solid #d3d3d3;
+                            border-bottom: 0.01rem solid #d3d3d3;
+                            padding: .08rem;
+                            >a{
+                                display: block;
+                                width: 100%;
+                                text-align: center;
+                                margin: 0;
+                                color: black;
+                            }
+                        }
                     }
                 }
+        
+        
             }
         }
-        
-        
     }
+    
+    
 }
 
 
@@ -154,4 +163,4 @@
            }
        }
    }
-}
+} 

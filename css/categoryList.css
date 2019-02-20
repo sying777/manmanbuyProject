@@ -79,27 +79,31 @@ li {
 #main {
   flex: 1;
   margin-top: .1rem;
+  position: relative;
 }
-#main .category-table {
+#main .mui-scroll-wrapper {
+  position: static;
+}
+#main .mui-scroll-wrapper .mui-scroll .category-table {
   line-height: .2rem;
   font-size: .16rem;
   font-weight: 600;
   background-color: #ededed;
   padding: 0;
 }
-#main .category-table .big-title {
+#main .mui-scroll-wrapper .mui-scroll .category-table .big-title {
   margin: .1rem;
 }
-#main .category-table .mui-collapse-content {
+#main .mui-scroll-wrapper .mui-scroll .category-table .mui-collapse-content {
   margin-top: 0;
   padding-top: 0;
 }
-#main .category-table .mui-collapse-content .category-ul {
+#main .mui-scroll-wrapper .mui-scroll .category-table .mui-collapse-content .category-ul {
   display: flex;
   flex-wrap: wrap;
   border-top: 0.01rem solid #d3d3d3;
 }
-#main .category-table .mui-collapse-content .category-ul .category-rows {
+#main .mui-scroll-wrapper .mui-scroll .category-table .mui-collapse-content .category-ul .category-rows {
   width: 33.3333%;
   text-align: center;
   font-size: .14rem;
@@ -108,7 +112,7 @@ li {
   border-bottom: 0.01rem solid #d3d3d3;
   padding: .08rem;
 }
-#main .category-table .mui-collapse-content .category-ul .category-rows > a {
+#main .mui-scroll-wrapper .mui-scroll .category-table .mui-collapse-content .category-ul .category-rows > a {
   display: block;
   width: 100%;
   text-align: center;

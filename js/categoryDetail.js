@@ -1,5 +1,11 @@
 $(function () {
+    
+    //区域滚动初始化
+    mui('.mui-scroll-wrapper').scroll({
+        deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
+    });
 
+    
     var id = queryId('categoryId');
     console.log(id);
     
@@ -13,38 +19,11 @@ $(function () {
                 $('.nav-left').html(html);
         }
     })
-    
-    $.ajax({
-        url:"http://localhost:9090/api/getproductlist",
-        data:{
-            categoryid: id,
-            pageid: page
-        },
-        success:function(obj){
-           console.log(obj);
-           var html = template('productTpl',obj);
-           $('#detail').html(html);
-           var totalPage = Math.ceil(obj.totalCount/obj.pagesize);
-          
-        //    console.log(totalPage);
-           for(let i=1;i<=totalPage;i++){
-            //    var page = i;
-               var option = "<option class='option'>"+
-               "<span class='spanFirst'>"+i+"</span> / <span>"+totalPage+"</span>"+
-               "<i class='mui-icon mui-icon-arrowdown'></i> </option>";
-               optionList += option;
-               $('.selectList').html(optionList);
-               
-           }
-           
-        }
-    })
-
     var page=1;
-    var optionList ="";
-    var flag = true;
-    queryPage(1);
-    function queryPage(page) {
+    
+    var totalPage;
+    render();
+    function render(){
         $.ajax({
             url:"http://localhost:9090/api/getproductlist",
             data:{
@@ -55,40 +34,53 @@ $(function () {
                console.log(obj);
                var html = template('productTpl',obj);
                $('#detail').html(html);    
-               var totalPage = Math.ceil(obj.totalCount/obj.pagesize);
-               if(flag){
-                  for(let i=1;i<=totalPage;i++){
-                    //    var page = i;
-                       var option = "<option class='option'>"+
-                       "<span class='spanFirst'>"+i+"</span> / <span>"+totalPage+"</span>"+
-                       "<i class='mui-icon mui-icon-arrowdown'></i> </option>";
-                       optionList += option;
-                       $('.selectList').html(optionList);
-                       
-                   }
-               }else{
-                    $('.option .spanFirst').html(page);
-                    flag = true;
-                }
+               totalPage = Math.ceil(obj.totalCount/obj.pagesize);
+               var optionList ="";
+               for(let i=1;i<=totalPage;i++){
+                   var option = "<option class='option'  value="+i+">"+
+                   "<span class='spanFirst'>"+i+"</span> / <span>"+totalPage+"</span>"+
+                   " </option>";
+                   optionList += option;
+               }
+               $('.selectList').html(optionList);
+               $('.option').eq(page - 1).attr('selected',true);
+               mui('.mui-scroll-wrapper').scroll().scrollTo(0,0,10);
             }
         })
     }
-    $('.nextPage').on('tap',function(){
-        flag=false;
+    $('.selectList').on('change',function(){
+        page = $(this).val();
+        console.log(page);
+        render();
+    })
+    $('.nextPage').on('tap',function(e){
+        e.preventDefault();
+        console.log(page);
         page++;
-        queryPage(page);
-        // $('.option .spanFirst').html(page);
-        scrollTo(0,0);
+        if (page <= totalPage) {
+            render();
+        } else {
+            page = 1;
+            render();
+            location.reload();
+        }
     })
 
-    $('.lastPage').on('tap',function(){
-        if (page > 1) {
-            page -= 1;
+    $('.lastPage').on('tap',function(e){
+        e.preventDefault();
+        pageid--;
+        if (pageid > 0) {
+            render();
         } else {
-            return;
+            pageid = page;
+            render();
+            
         }
-        queryPage(page);
-        scrollTo(0,0);
+    })
+
+    $('.back').on('tap',function (e) {
+        e.preventDefault();
+        mui('.mui-scroll-wrapper').scroll().scrollTo(0,0,1000);
     })
     
     

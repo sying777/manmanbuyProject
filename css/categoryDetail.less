@@ -54,79 +54,99 @@
 }
 
 
+
 #main{
     overflow: scroll;
     flex:1;
+    // height: 100%;
     margin-top: .1rem;
-    padding-bottom: .3rem;
-    #nav{
-        height: .3rem;
-        .nav-left{
-            float: left;
-            margin-left: .05rem;
-            line-height: .3rem;
-            >a{
-                color: black;
-                font-size: .13rem;
-            }
-        }
-        .nav-right{
-            float: right;
-            line-height: .3rem;
-            .mui-btn{
-                margin-right: .08rem;
-                width: .6rem;
-                font-size: .14rem;
-                // font-weight: 400;
-                border-radius: .06rem;
-                background: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#ccc));
-            
-            }
-            
-        }
-    }
-    #detail{
-        // padding-top:.3rem;
-        .listDetail{
-            >li{
-                height: 1.0rem;
-                padding: .12rem 0.05rem;
-                border-bottom: .01rem solid #ccc;
-                .product{
-                    display:flex;
-                    .pic{
-                        width: 1.2rem;
-                        >img{
-                            width: 100%;
-                        }
+    padding-bottom: .1rem;
+    display: flex;
+    position:relative;
+
+    .mui-scroll-wrapper{
+        // position: relative;
+        .mui-scroll{
+            // position: relative;
+            // padding-top:1rem;
+            // padding-bottom: .8rem;
+
+            #nav{
+                height: .3rem;
+                .nav-left{
+                    float: left;
+                    margin-left: .05rem;
+                    line-height: .3rem;
+                    >a{
+                        color: black;
+                        font-size: .13rem;
                     }
-                    .shop-content{
-                        flex:1;
-                        .rightFirst{
-                            font-size: .14rem;
-                            color: black;
-                            margin-bottom: .05rem;
-                            line-height: .16rem;
-                        }
-                        .rightSecond{
-                            font-size: .16rem;
-                            color: red;
-                        }
-                        .other{
-                            font-size: .12rem;
-                            color: #c6c6c6;
-                            >span{
-                                margin-right: .05rem;
+                }
+                .nav-right{
+                    float: right;
+                    line-height: .3rem;
+                    .mui-btn{
+                        margin-right: .08rem;
+                        width: .6rem;
+                        font-size: .14rem;
+                        // font-weight: 400;
+                        border-radius: .06rem;
+                        background: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#ccc));
+                    
+                    }
+                    
+                }
+            }
+            #detail{
+                // padding-top:.3rem;
+                .listDetail{
+                    >li{
+                        height: 1.0rem;
+                        padding: .12rem 0.05rem;
+                        border-bottom: .01rem solid #ccc;
+                        .product{
+                            display:flex;
+                            .pic{
+                                width: 1.2rem;
+                                >img{
+                                    width: 100%;
+                                }
+                            }
+                            .shop-content{
+                                flex:1;
+                                .rightFirst{
+                                    font-size: .14rem;
+                                    color: black;
+                                    margin-bottom: .05rem;
+                                    line-height: .16rem;
+                                }
+                                .rightSecond{
+                                    font-size: .16rem;
+                                    color: red;
+                                }
+                                .other{
+                                    font-size: .12rem;
+                                    color: #c6c6c6;
+                                    >span{
+                                        margin-right: .05rem;
+                                    }
+                                }
                             }
                         }
                     }
+                    
+        
                 }
             }
-           
-
+    
         }
     }
 }
+
+    
+   
+
+
 
 
 #page {
