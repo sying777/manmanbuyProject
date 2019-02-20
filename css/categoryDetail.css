@@ -24,7 +24,32 @@ ul,
 li {
   list-style: none;
 }
+select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  padding-right: 14px;
+}
+option::-ms-expand {
+  display: none;
+}
+option {
+  -moz-appearance: none;
+  /* Firefox */
+  -webkit-appearance: none;
+  /* Safari 和 Chrome */
+  appearance: none;
+}
+/* --背景色字体颜色--*/
+option:hover {
+  color: #fff;
+  background-color: red;
+  min-height: 0;
+}
 /* 设置网页主题颜色 */
+option {
+  width: .1rem;
+}
 #header {
   height: 1rem;
   width: 100%;
@@ -158,18 +183,27 @@ li {
   border-radius: .06rem;
   background: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#ccc));
 }
+#page button {
+  width: .8rem;
+  line-height: 0;
+  height: .3rem;
+}
 #page #selectPage {
-  flex: 1;
-  padding: 0;
-  margin: 0rem;
   border: .01rem solid #ccc;
 }
 #page #selectPage .selectList {
+  width: 1rem;
+  margin-top: 0;
+  padding: 0;
+  margin-bottom: 0;
   font-size: .16rem;
-  text-align: center;
+  line-height: .25rem;
+  padding-left: .3rem;
 }
-#page #selectPage .selectList .option {
-  display: block;
+#page #selectPage .selectList option {
+  text-align: center;
+  width: 1rem;
+  height: 1rem;
 }
 #hxw-footer {
   background-color: #efefef;
