@@ -12,18 +12,6 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
-img {
-  /* 解决图片和块级元素3px间隙问题 */
-  vertical-align: middle;
-}
-ul,
-li {
-  list-style: none;
-}
-a {
-  text-decoration: none;
-  color: #000;
-}
 /* 设置公共的网站顶部样式  */
 #header {
   position: relative;
