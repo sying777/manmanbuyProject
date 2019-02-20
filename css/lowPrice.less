@@ -21,9 +21,11 @@ body {
     width: 100%;
     overflow: hidden;
     z-index: 999;
+
     a {
         color: white;
     }
+
     .zjc-left {
         width: .4rem;
         font-size: .3rem;
@@ -48,10 +50,12 @@ body {
 #main {
     flex: 1;
     overflow: scroll;
+
     #list {
         margin-top: .4rem;
         margin-bottom: .8rem;
     }
+
     .nav {
         height: .3rem;
 
@@ -98,26 +102,33 @@ body {
             .zjc-right {
                 flex: 1;
                 margin-left: .04rem;
+                height: 1.4rem;
 
                 .zjc-title {
-                    font-size: .15rem;
+                    margin-top: .04rem;
+                    font-size: .14rem;
                     color: black;
                     margin-bottom: 0;
                     overflow: hidden;
                     text-overflow: ellipsis;
                     white-space: nowrap;
+                    line-height: .18rem;
                     width: 2.5rem;
+                    height: .18rem;
                 }
 
                 .zjc-price {
-                    margin: .1rem 0;
-                    font-size: .16rem;
+                    margin-top: .1rem;
+                    font-size: .12rem;
                     color: #f4483e;
                     font-size: .2rem;
+                    height: .24rem;
+
                     em {
                         margin-left: .05rem;
                         font-size: .14rem;
                     }
+
                     i {
                         font-size: .14rem;
                         font-style: normal;
@@ -132,9 +143,11 @@ body {
 
                 .progress {
                     display: flex;
+
                     b {
                         font-size: .14rem;
                     }
+
                     .mui-progressbar {
                         height: .1rem;
                         width: .9rem;
@@ -152,12 +165,21 @@ body {
                 .zjc-receive {
                     display: flex;
                     margin-top: .08rem;
+                    height: .3rem;
+
                     .zjc-coupons {
                         font-size: .12rem;
                         border: 1px dashed #f4483e;
                         line-height: .28rem;
+
                         a {
+                            display: block;
                             color: #f4483e;
+                            // line-height: .28rem;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            width: 1rem;
                         }
                     }
 
@@ -170,6 +192,7 @@ body {
                         line-height: .3rem;
                         margin-left: .7rem;
                         color: #fff;
+
                         a {
                             color: #fff;
                         }
@@ -183,33 +206,45 @@ body {
 
 
 .bar {
+    height: .22rem;
+    display: flex;
+
     i {
         position: relative;
-        float:left;
-    width:1rem;
-    height:.14rem;
-    border:1px solid;
-    font-size: .14rem;
-    margin-top: .04rem;
+        float: left;
+        width: 1rem;
+        border: 1px solid;
+        font-size: .14rem;
+        margin-top: .04rem;
+
         em {
-            float:left;
-            width:0rem;
-            height:.11rem;
-            border:0px;
-            background:red;
+            float: left;
+            width: 0rem;
+            height: .12rem;
+            border: 0px;
+            background: red;
             font-size: .14rem;
+            margin-top: .02rem;
         }
+
         span {
             position: absolute;
             left: 40%;
-            top: -0.05rem;
+            top: 0;
+            font-size: .16rem;
+            height: .16rem;
+            line-height: .16rem;
         }
     }
+
     b {
         color: #f4483e;
         font-size: .12rem;
+        margin-top: .06rem;
+        line-height: .12rem;
     }
 }
+
 
 
 
@@ -237,8 +272,10 @@ body {
     }
 
     .zjc-bottom {
+        margin-top: .1rem;
         font-size: .12rem;
         text-align: center;
+        line-height: .12rem;
 
         a {
             color: #f4483e;

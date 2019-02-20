@@ -85,21 +85,26 @@ body {
 #main .shops .zjc-goods .zjc-right {
   flex: 1;
   margin-left: .04rem;
+  height: 1.4rem;
 }
 #main .shops .zjc-goods .zjc-right .zjc-title {
-  font-size: .15rem;
+  margin-top: .04rem;
+  font-size: .14rem;
   color: black;
   margin-bottom: 0;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  line-height: .18rem;
   width: 2.5rem;
+  height: .18rem;
 }
 #main .shops .zjc-goods .zjc-right .zjc-price {
-  margin: .1rem 0;
-  font-size: .16rem;
+  margin-top: .1rem;
+  font-size: .12rem;
   color: #f4483e;
   font-size: .2rem;
+  height: .24rem;
 }
 #main .shops .zjc-goods .zjc-right .zjc-price em {
   margin-left: .05rem;
@@ -134,6 +139,7 @@ body {
 #main .shops .zjc-goods .zjc-right .zjc-receive {
   display: flex;
   margin-top: .08rem;
+  height: .3rem;
 }
 #main .shops .zjc-goods .zjc-right .zjc-receive .zjc-coupons {
   font-size: .12rem;
@@ -141,7 +147,12 @@ body {
   line-height: .28rem;
 }
 #main .shops .zjc-goods .zjc-right .zjc-receive .zjc-coupons a {
+  display: block;
   color: #f4483e;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 1rem;
 }
 #main .shops .zjc-goods .zjc-right .zjc-receive .zjc-buy {
   height: .3rem;
@@ -156,11 +167,14 @@ body {
 #main .shops .zjc-goods .zjc-right .zjc-receive .zjc-buy a {
   color: #fff;
 }
+.bar {
+  height: .22rem;
+  display: flex;
+}
 .bar i {
   position: relative;
   float: left;
   width: 1rem;
-  height: .14rem;
   border: 1px solid;
   font-size: .14rem;
   margin-top: .04rem;
@@ -168,19 +182,25 @@ body {
 .bar i em {
   float: left;
   width: 0rem;
-  height: .11rem;
+  height: .12rem;
   border: 0px;
   background: red;
   font-size: .14rem;
+  margin-top: .02rem;
 }
 .bar i span {
   position: absolute;
   left: 40%;
-  top: -0.05rem;
+  top: 0;
+  font-size: .16rem;
+  height: .16rem;
+  line-height: .16rem;
 }
 .bar b {
   color: #f4483e;
   font-size: .12rem;
+  margin-top: .06rem;
+  line-height: .12rem;
 }
 #footer {
   position: relative;
@@ -203,8 +223,10 @@ body {
   border-left: 1px solid #eee;
 }
 #footer .zjc-bottom {
+  margin-top: .1rem;
   font-size: .12rem;
   text-align: center;
+  line-height: .12rem;
 }
 #footer .zjc-bottom a {
   color: #f4483e;
